@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#211D44"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/bgcircle"
+        android:layout_width="253dp"
+        android:layout_height="235dp"
+        android:background="@drawable/bgcircle"
+        android:contentDescription="TODO"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.252" />
+
+
+    <ImageView
+        android:id="@+id/icanchor"
+        android:layout_width="336dp"
+        android:layout_height="327dp"
+        android:background="@drawable/icanchor"
+        android:fadingEdge="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.173" />
+
+
+    <Chronometer
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:gravity="center"
+        android:id="@+id/timerHere"
+        android:textColor="#FFF"
+        android:textSize="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.579"
+        tools:layout_editor_absoluteX="0dp" />
+
+
+    <Button
+        android:id="@+id/btnget"
+        android:layout_width="178dp"
+        android:layout_height="65dp"
+        android:background="@drawable/bgbtngreen"
+        android:cropToPadding="true"
+        android:gravity="center"
+        android:text="@string/start_now"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:tint="#E3CD0B"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/finish"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.947"
+        app:srcCompat="@android:drawable/ic_menu_myplaces" />
+
+    <Button
+        android:id="@+id/finish"
+        android:layout_width="178dp"
+        android:layout_height="65dp"
+        android:background="@drawable/buttonshape2"
+        android:cropToPadding="true"
+        android:shadowColor="#000000"
+        android:text="FINISH NOW"
+        android:textColor="#FDFCFC"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.921"
+        app:rippleColor="#E8DCDC"
+        app:srcCompat="@android:drawable/ic_menu_myplaces" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
